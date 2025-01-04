@@ -64,3 +64,4 @@ motoko uses
 (similar a constant in js)
 "var"
 (similar a value that can be changed)
+by adding a modifyer word call "public" to the func it can be call from outside the private function
