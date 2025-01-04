@@ -57,5 +57,10 @@ Old version delete due no longer working so deleted using "rm -rf foldername":
 dfx outdated so did not work.
 updated dfx by using "dfxvm update" now using version dfx 0.24.3
 All work will be done in main.mo found in src folder
-Terminal one starts with "dfx start"
-Terminal "dfx deploy" both working
+Terminal one starts with "dfx start" and runs the internet computer
+Terminal "dfx deploy" run the application now both working
+motoko uses
+"let"
+(similar a constant in js)
+"var"
+(similar a value that can be changed) 
