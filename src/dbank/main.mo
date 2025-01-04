@@ -4,9 +4,9 @@ actor DBank {
   var currentValue = 300;
   currentValue := 100;
 
-  let 
+  let id = 23456789;
 
   Debug.print(debug_show(currentValue));
-
+  Debug.print(debug_show(id));
 }
  

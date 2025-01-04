@@ -63,4 +63,4 @@ motoko uses
 "let"
 (similar a constant in js)
 "var"
-(similar a value that can be changed) 
+(similar a value that can be changed)
