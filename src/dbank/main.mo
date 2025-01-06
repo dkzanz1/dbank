@@ -13,11 +13,18 @@ actor DBank {
     currentValue += amount; 
      Debug.print(debug_show(currentValue));
   };
+  //Allow the user to subtract an amount from the current value
+  //drecrease current value by that amount
    public func withDraw(amount: Nat) {
-    currentValue -= amount; 
-     Debug.print(debug_show(currentValue));
+    let tempValue: Int = currentValue - amount;
+    if (tempValue >= 0) {
+      currentValue -= amount;}
+      else {
+         Debug.print( "Amount too large currentValue is less than zero" );
+         }
   };
+  } 
  
 //  topUp();
-}
+
  
