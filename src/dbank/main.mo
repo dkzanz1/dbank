@@ -13,8 +13,9 @@ actor DBank {
     currentValue += amount; 
      Debug.print(debug_show(currentValue));
   };
+
   //Allow the user to subtract an amount from the current value
-  //drecrease current value by that amount
+  //decrease current value by that amount
    public func withDraw(amount: Nat) {
     let tempValue: Int = currentValue - amount;
     if (tempValue >= 0) {
@@ -23,6 +24,10 @@ actor DBank {
          Debug.print( "Amount too large currentValue is less than zero" );
          }
   };
+  //query allow the data to be checked upomn rather than update which tAke longer
+  public query func checkBalance():async Nat {
+    return currentValue;
+  }
   } 
  
 //  topUp();
