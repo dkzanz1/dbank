@@ -9,8 +9,12 @@ actor DBank {
   // Debug.print(debug_show(currentValue));
   // Debug.print(debug_show(id));
 
-  public func topUp() {
-    currentValue += 3; 
+  public func topUp(amount: Nat) {
+    currentValue += amount; 
+     Debug.print(debug_show(currentValue));
+  };
+   public func withDraw(amount: Nat) {
+    currentValue -= amount; 
      Debug.print(debug_show(currentValue));
   };
  
