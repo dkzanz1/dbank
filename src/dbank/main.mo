@@ -38,7 +38,7 @@ actor DBank {
 
 
 //  topUp();
-
+//intial interest amount set to interest at 1 percent per seconds passed by /1 million
 public func compound() {
   let currentTime = Time.now();
   let timeElaspedNS = currentTime - startTime;
