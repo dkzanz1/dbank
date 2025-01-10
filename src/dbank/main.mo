@@ -1,8 +1,14 @@
 import Debug "mo:base/Debug";
+import Time "mo:base/Time";
 
 actor DBank {
-  var currentValue = 300;
-  currentValue := 100;
+  stable var currentValue = 300;
+  //note that the keyword "stable" creates
+  // a persistant variable that remembers state
+  // currentValue := 100;
+
+  let startTime = Time.now();
+  Debug.print(debug_show(startTime));
 
   let id = 23456789;
 
