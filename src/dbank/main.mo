@@ -8,7 +8,7 @@ actor DBank {
   // a persistant variable that remembers state
   // currentValue := 100;
 
-  let startTime = Time.now();
+  stable var startTime = Time.now();
   Debug.print(debug_show (startTime));
 
   let id = 23456789;
@@ -42,7 +42,8 @@ actor DBank {
 public func compound() {
   let currentTime = Time.now();
   let timeElaspedNS = currentTime - startTime;
-  let timeelapseS = timeElaspedNS/1000000000;
-  currentValue := currentValue * (1.01 ** Float.fromInt(timelaspedS));
+  let timeElapsedS = timeElaspedNS/1000000000;
+  currentValue := currentValue * (1.01 ** Float.fromInt(timeElapsedS));
+  startTime := currentTime;
   }
 };

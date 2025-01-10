@@ -71,4 +71,5 @@ creation of candid ui by using "dfx canister id __Candid_UI" in terminal two
 to get address code for candid in browser it returned "r7inp-6aaaa-aaaaa-aaabq-cai"
 which was then pasted into browser with this written before it.
 "http://127.0.0.1:8000/?canisterId=" which created page then asked for second id which was created by using "dfx canister id dbank" returned "rrkah-fqaaa-aaaaa-aaaaq-cai" and added it to canister input field and pressed go to get "http://127.0.0.1:8000/?canisterId=r7inp-6aaaa-aaaaa-aaabq-cai&id=rrkah-fqaaa-aaaaa-aaaaq-cai"
+the https page can be located with control click form the second terminal once deployed
 the browser page return gui page to reflect value changing withnew calculations
