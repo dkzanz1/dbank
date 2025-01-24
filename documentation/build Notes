@@ -1,0 +1,33 @@
+# Blurb-notes-to-self
+
+-This project uses motoko programming language, and was created using "dfx new dbank",
+Old version delete due no longer working so deleted using "rm -rf foldername":
+dfx outdated so did not work.
+updated dfx by using "dfxvm update" now using version dfx 0.24.3
+All work will be done in main.mo found in src folder
+Terminal one starts with "dfx start" and runs the internet computer
+Terminal "dfx deploy" run the application now both working
+motoko uses
+"let"
+(similar as constant in js)
+"var"
+(similar as value that can be changed)
+by adding a modifyer word call "public" to the func it can be call from outside the private function.
+
+## Introduced-candid-IU-interface
+
+ which is an easy way to interact with our canistars instead of using dfx command line
+creation of candid ui by using "dfx canister id __Candid_UI" in terminal two
+to get address code for candid in browser it returned "r7inp-6aaaa-aaaaa-aaabq-cai"
+which was then pasted into browser with this written before it.
+"<http://127.0.0.1:8000/?canisterId=>" which created page then asked for second id which was created by using "dfx canister id dbank" returned "rrkah-fqaaa-aaaaa-aaaaq-cai" and added it to canister input field and pressed go to get "<http://127.0.0.1:8000/?><canisterId=r7inp-6aaaa-aaaaa-aaabq-cai&id=rrkah-fqaaa-aaaaa-aaaaq-cai">
+the https page can be located with control click form the second terminal once deployed
+the browser page return gui page to reflect value changing with new calculations
+
+### Introduction-of-javascript
+
+code created via javascript  to get the user interface to run calculation
+index.js holds the code.
+to start gui dfx start(1st terminal)dfx deploy (2nd terminal)npm start(2nd terminal)localhost:8080
+
+got an issue with the version of node i was using so downgraded to latest most stable version from 23.6.0 to 22.13.0 jodi to see if helps
