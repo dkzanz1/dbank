@@ -31,7 +31,7 @@ index.js holds the code.
 to start gui dfx start(1st terminal)dfx deploy (2nd terminal)npm start(2nd terminal)localhost:8080
 
 got an issue with the version of node i was using so downgraded to latest most stable version from 23.6.0 to 22.13.0 jodi to see if helps bit wasa the dependancy that needed changing and re-installing
-taken from Q&a in udemy 
+taken from Q&a in udemy
 7 months ago
 Because Angela is using in the video some older version, newer versions of the dependencies will not work
 Here is the solution:
@@ -40,4 +40,5 @@ Here is the solution:
 npm uninstall @dfinity/agent @dfinity/candid @dfinity/principal webpack webpack-cli webpack-dev-server
 
 2. reainstall with working versions:
-npm i @dfinity/agent@0.15.2 @dfinity/candid@0.15.2 @dfinity/principal@0.15.2 webpack@5.63.0 webpack-cli@5.0.0 webpack-dev-server@4.4.0
+npm i @dfinity/agent@0.15.2 @dfinity/candid@0.15.2 @dfinity/principal@0.15.2 webpack@5.63.0 webpack-cli@5.0.0
+webpack-dev-server@4.4.0 end
