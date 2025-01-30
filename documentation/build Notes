@@ -1,12 +1,13 @@
 # Blurb-notes-to-self
-
--This project uses motoko programming language, and was created using "dfx new dbank",
+Created due to the fact that work on more than project at any one time and it helps me remember project progress
+-This project uses motoko programming language,it was created using "dfx new dbank",
 Old version delete due no longer working so deleted using "rm -rf foldername":
 dfx outdated so did not work.
 updated dfx by using "dfxvm update" now using version dfx 0.24.3
-All work will be done in main.mo found in src folder
+All work will be done in main.mo found in src folder.
 Terminal one starts with "dfx start" and runs the internet computer
-Terminal "dfx deploy" run the application now both working
+Terminal two "dfx deploy" run the application now both working
+I prefer to use terminal three to run "npm start" which starts the browser coded page to run (which come later in video porgress)
 motoko uses
 "let"
 (similar as constant in js)
@@ -14,9 +15,9 @@ motoko uses
 (similar as value that can be changed)
 by adding a modifyer word call "public" to the func it can be call from outside the private function.
 
-## Introduced-candid-IU-interface
+## Introduced-usage-candid-IU-interface
 
- which is an easy way to interact with our canistars instead of using dfx command line
+ Which is an easy way to interact with our canistars instead of using dfx command line
 creation of candid ui by using "dfx canister id __Candid_UI" in terminal two
 to get address code for candid in browser it returned "r7inp-6aaaa-aaaaa-aaabq-cai"
 which was then pasted into browser with this written before it.
@@ -28,17 +29,20 @@ the browser page return gui page to reflect value changing with new calculations
 
 code created via javascript  to get the user interface to run calculation
 index.js holds the code.
-to start gui dfx start(1st terminal)dfx deploy (2nd terminal)npm start(2nd terminal)localhost:8080
-
-got an issue with the version of node i was using so downgraded to latest most stable version from 23.6.0 to 22.13.0 jodi to see if helps bit wasa the dependancy that needed changing and re-installing
+to start gui dfx start(1st terminal)dfx deploy (2nd terminal)npm start(3rd terminal)localhost:8080
+problem{-}
+an issue with the version of node?,
+I was using, so downgraded to latest most stable version from 23.6.0 to 22.13.0 jodi to see if helps a bit, it was the dependency that needed changing and re-installing
 taken from Q&a in udemy
 7 months ago
 Because Angela is using in the video some older version, newer versions of the dependencies will not work
 Here is the solution:
-
-1. uninstall current dep
+Rollback to older version
+1.uninstall current dep
 npm uninstall @dfinity/agent @dfinity/candid @dfinity/principal webpack webpack-cli webpack-dev-server
 
-2. reainstall with working versions:
+2.reainstall with working versions:
 npm i @dfinity/agent@0.15.2 @dfinity/candid@0.15.2 @dfinity/principal@0.15.2 webpack@5.63.0 webpack-cli@5.0.0
 webpack-dev-server@4.4.0 end
+now working
+#### Adding-javascript-to-connect-front-end-to-back-end
