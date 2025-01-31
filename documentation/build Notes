@@ -44,5 +44,6 @@ npm uninstall @dfinity/agent @dfinity/candid @dfinity/principal webpack webpack-
 2.reainstall with working versions:
 npm i @dfinity/agent@0.15.2 @dfinity/candid@0.15.2 @dfinity/principal@0.15.2 webpack@5.63.0 webpack-cli@5.0.0
 webpack-dev-server@4.4.0 end
-now working
-#### Adding-javascript-to-connect-front-end-to-back-end
+now working I beileve that loading to early vervion of dfinity created a new issue with Nan value in placeholder on form for value so upgrade infinity to 0.19.0 as suggested in q&a SEEMS TO WORK
+####
+Adding-javascript-to-connect-front-end-to-back-end

@@ -10,7 +10,7 @@ actor DBank {
   // currentValue := 100;
 
   stable var startTime = Time.now();
-  Debug.print(debug_show (startTime));
+  Debug.print(debug_show(startTime));
 
   let id = 23456789;
 
@@ -19,7 +19,7 @@ actor DBank {
 
   public func topUp(amount : Float) {
     currentValue += amount;
-    Debug.print(debug_show (currentValue));
+    Debug.print(debug_show(currentValue));
   };
 
   //Allow the user to subtract an amount from the current value
@@ -28,11 +28,12 @@ actor DBank {
     let tempValue : Float = currentValue - amount;
     if (tempValue >= 0) {
       currentValue -= amount;
+      Debug.print(debug_show(currentValue));
     } else {
       Debug.print("Amount too large currentValue is less than zero");
     };
   };
-  //query allow the data to be checked upomn rather than update which tAke longer
+  //query allow the data to be checked upon rather than update which take longer
   public query func checkBalance() : async Float {
     return currentValue;
   };
@@ -40,11 +41,11 @@ actor DBank {
 
 //  topUp();
 //intial interest amount set to interest at 1 percent per seconds passed by /1 million
-public func compound() {
-  let currentTime = Time.now();
-  let timeElaspedNS = currentTime - startTime;
-  let timeElapsedS = timeElaspedNS/1000000000;
-  currentValue := currentValue * (1.01 ** Float.fromInt(timeElapsedS));
-  startTime := currentTime;
-  }
+// public func compound() {
+//   let currentTime = Time.now();
+//   let timeElaspedNS = currentTime - startTime;
+//   let timeElapsedS = timeElaspedNS/1000000000;
+//   currentValue := currentValue * (1.01 ** Float.fromInt(timeElapsedS));
+//   startTime := currentTime;
+//   }
 };
