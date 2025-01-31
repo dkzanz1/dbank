@@ -7,7 +7,7 @@ actor DBank {
   stable var currentValue: Float = 300;
   //note that the keyword "stable" creates
   // a persistant variable that remembers state
-  // currentValue := 100;
+
 
   stable var startTime = Time.now();
   Debug.print(debug_show(startTime));
@@ -38,14 +38,14 @@ actor DBank {
     return currentValue;
   };
 
-
 //  topUp();
-//intial interest amount set to interest at 1 percent per seconds passed by /1 million
-// public func compound() {
-//   let currentTime = Time.now();
-//   let timeElaspedNS = currentTime - startTime;
-//   let timeElapsedS = timeElaspedNS/1000000000;
-//   currentValue := currentValue * (1.01 ** Float.fromInt(timeElapsedS));
-//   startTime := currentTime;
-//   }
+
+// intial interest amount set to interest at 1 percent per seconds passed by /1 million
+public func compound() {
+  let currentTime = Time.now();
+  let timeElaspedNS = currentTime - startTime;
+  let timeElapsedS = timeElaspedNS/1000000000;
+  currentValue := currentValue * (1.01 ** Float.fromInt(timeElapsedS));
+  startTime := currentTime;
+  }
 };

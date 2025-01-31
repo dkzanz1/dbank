@@ -1,10 +1,11 @@
 import { dbank } from "../../declarations/dbank";
 
 
-window.addEventListener("load", async function(){
+window.addEventListener("load", async function() {
+  console.log("finished loading");
   const currentAmount = await dbank.checkBalance();
-  console.log(dbank.checkBalance); 
-   document.getElementById("value").innerText = currentAmount;
+ 
+  document.getElementById("value").innerText = currentAmount;
   console.log(currentAmount);
 });
 // document.querySelector("form").addEventListener ("submit", async function(e){
