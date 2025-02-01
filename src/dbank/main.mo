@@ -5,7 +5,7 @@ import Int "mo:base/Int";
 
 actor DBank {
   stable var currentValue: Float = 300;
-  currentValue := 300;//This line was used as a reset for the valuw then commented out
+  currentValue :=300;//This line was used as a reset for the valuw then commented out
   //note that the keyword "stable" creates
   // a persistant variable that remembers state
 

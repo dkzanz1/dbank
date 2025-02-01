@@ -10,9 +10,9 @@ window.addEventListener("load", async function() {
   console.log(currentAmount);
 });
 // document.querySelector("form").addEventListener ("submit", async function(e){
-// // console.log("Submitted");
+// console.log("Submitted");
 // e.preventDefault();
-// const button =e.target.querySelector("#submit-btn");
+//   const button =e.target.querySelector("#submit-btn");
 
 // const inputAmount = parseFloat(document.getElementById("input-amount").value);
 // const outputAmount = parseFloat(document.getElementById("withdrawal-amount").value);
@@ -33,4 +33,3 @@ window.addEventListener("load", async function() {
 
 
 
-    
