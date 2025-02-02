@@ -5,12 +5,13 @@ import Int "mo:base/Int";
 
 actor DBank {
   stable var currentValue: Float = 300;
-  currentValue :=300;//This line was used as a reset for the valuw then commented out
-  //note that the keyword "stable" creates
-  // a persistant variable that remembers state
-
+  currentValue :=300;
+  //This line above was used as a reset for the valuw then commented out
+  //note that the keyword "stable" creates// a persistant variable that remembers state
+Debug.print(debug_show(currentValue));
   stable var startTime = Time.now();
-  startTime := Time.now();//This line was used as a reset for the value for time then commented out
+  startTime := Time.now();
+  //This line above was used as a reset for the value for time then commented out
   Debug.print(debug_show(startTime));
 
   let id = 23456789;
@@ -22,8 +23,8 @@ actor DBank {
     Debug.print(debug_show(currentValue));
   };
 
-  //Allow the user to subtract an amount from the current value
-  //decrease current value by that amount
+  //Allows the user to subtract an amount from the current value
+
   public func withDraw(amount : Float) {
     let tempValue : Float = currentValue - amount;
     if (tempValue >= 0) {
